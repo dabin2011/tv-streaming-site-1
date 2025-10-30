@@ -1,0 +1,9 @@
+<!-- frontend/channel1.html -->
+<video id="video" controls autoplay></video>
+<script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+<script>
+  const video = document.getElementById('video');
+  const hls = new Hls();
+  hls.loadSource('https://your-streaming-url.com/channel12.m3u8');
+  hls.attachMedia(video);
+</script>
